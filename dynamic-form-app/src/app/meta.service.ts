@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ControlType } from './control.types';
 import { ControlBase } from './controls/control-base';
 import { lastValueFrom, map, tap } from 'rxjs';
 
@@ -11,7 +10,7 @@ import { lastValueFrom, map, tap } from 'rxjs';
 export class MetaService {
   constructor(private http: HttpClient) {}
 
-  async getMeta(): Promise<ControlType[]> {
+  async getMeta(): Promise<ControlBase[]> {
     return lastValueFrom(
       this.http
         .get('http://localhost:8080/meta.json')

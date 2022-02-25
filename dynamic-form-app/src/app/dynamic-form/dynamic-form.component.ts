@@ -1,6 +1,5 @@
-import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { ControlType } from '../control.types';
 import { ControlBase } from '../controls/control-base';
 import { MetaService } from '../meta.service';
 
