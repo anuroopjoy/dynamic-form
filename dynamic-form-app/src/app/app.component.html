@@ -1,0 +1,5 @@
+<ng-container *ngIf="meta && data">
+  <app-dynamic-form [meta]="meta" [data]="data"></app-dynamic-form>
+</ng-container>
+
+<button class="btn btn-primary mt-5" (click)="refresh()">Refresh</button>
